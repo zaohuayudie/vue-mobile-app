@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "xs-app",
+      "script": "./app.js",
+      "cwd": "./",
+      "error_file": "./logs/err.log",
+      "out_file": "./logs/out.log",
+      "exec_mode": "cluster_mode",
+      "instances": 2,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 7001
+      },
+      "max_memory_restart": "300M",
+      "log_date_format": "YYYY - MM - DD HH: mm Z"
+    }
+  ]
+}
