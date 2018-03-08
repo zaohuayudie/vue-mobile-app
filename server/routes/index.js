@@ -24,9 +24,6 @@ module.exports = function (app) {
   //     next()
   //   }
   // });
-  app.use('/', function (req, res, next) {
-    res.send('个人网站还在开发中');
-  })
   app.use('/h5', require('./router'));
 }
 
